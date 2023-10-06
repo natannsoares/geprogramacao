@@ -3,3 +3,5 @@ function tocaSomRisada(){
 }
 
 document.querySelector(".tecla_risada").onclick = tocaSomRisada;
+
+document.querySelector(".tecla_grilo").onclick = tocaSomGrilo;
