@@ -3,9 +3,6 @@ function tocaSom(idElementoAudio){
     document.querySelector ("idElementoAudio").play();
 }
 
-//chamada da função criada para tocar ao clique do mouse
-document.querySelector(".tecla_risada").onclick = tocaSomRisada;
-
 //constante das teclas com busca de todos os botões da classe
 const listaDeTeclas = document.querySelector(".tecla");
 
