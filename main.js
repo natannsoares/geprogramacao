@@ -1,7 +1,21 @@
-function tocaSomRisada(){
-    document.querySelector ("#som_tecla_risada").play()
+//criado a função para tocar o som e feito a vusca id do som
+function tocaSom(idElementoAudio){
+    document.querySelector ("idElementoAudio").play();
 }
 
+//chamada da função criada para tocar ao clique do mouse
 document.querySelector(".tecla_risada").onclick = tocaSomRisada;
 
-document.querySelector(".tecla_grilo").onclick = tocaSomGrilo;
+//constante das teclas com busca de todos os botões da classe
+const listaDeTeclas = document.querySelector(".tecla");
+
+let contador = 0;
+while (contador < listaDeTeclas.length) {
+    const efeito = listaDeTeclas[contador].classList[1];
+    const idAudio = "#som_" + efeito;
+    listaDeTeclas[contador].onclick = function (){
+        tocaSom(idAudio);
+    }
+    contador = contador + 1;
+    console.log(contador);
+}
