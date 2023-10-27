@@ -1,4 +1,4 @@
-//criado a função para tocar o som e feito a vusca id do som
+//criado a função para tocar o som e feito a busca id do som
 function tocaSom(idElementoAudio){
     document.querySelector ("idElementoAudio").play();
 }
