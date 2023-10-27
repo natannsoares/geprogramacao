@@ -6,6 +6,7 @@ function tocaSom(idElementoAudio){
 //constante das teclas com busca de todos os botões da classe
 const listaDeTeclas = document.querySelector(".tecla");
 
+//criado o contador e o laço de repetição while tocando com o click
 let contador = 0;
 while (contador < listaDeTeclas.length) {
     const efeito = listaDeTeclas[contador].classList[1];
