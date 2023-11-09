@@ -1,10 +1,10 @@
 //criado a função para tocar o som e feito a busca id do som
 function tocaSom(idElementoAudio){
-    document.querySelector ("idElementoAudio").play();
+    document.querySelector(idElementoAudio).play();
 }
 
 //constante das teclas com busca de todos os botões da classe
-const listaDeTeclas = document.querySelector(".tecla");
+const listaDeTeclas = document.querySelectorAll(".tecla");
 
 //criado o contador e o laço de repetição while tocando com o click
 let contador = 0;
