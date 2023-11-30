@@ -23,3 +23,10 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     }
 }
 
+let elemento = document.querySelector("#id_som_batendo_pe");
+if (elemento === null){
+   console.log("Elemento não encontrado");
+} else{
+   elemento.play();
+}
+
